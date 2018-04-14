@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  StackOverflowFeed
+//
+//  Created by Igor Novik on 4/13/18.
+//  Copyright © 2018 Appetize. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Constants.h" 
+
+#endif /* PrefixHeader_pch */

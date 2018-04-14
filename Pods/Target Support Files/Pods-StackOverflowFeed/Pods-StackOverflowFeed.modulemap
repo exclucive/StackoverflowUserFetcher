@@ -1,0 +1,6 @@
+module Pods_StackOverflowFeed [system] {
+  umbrella header "Pods-StackOverflowFeed-umbrella.h"
+
+  export *
+  module * { export * }
+}
