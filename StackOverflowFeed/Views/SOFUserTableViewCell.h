@@ -14,6 +14,7 @@ extern NSString * const _Nonnull kSOFUserTableViewCellIdentifier;
 
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+    @property (weak, nonatomic) IBOutlet UILabel *userReputationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *goldBadgeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *silverBadgeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bronzeBadgeLabel;

@@ -10,16 +10,20 @@
 #import "SOFUserTableViewCell.h"
 #import "SOFUserFetcher.h"
 #import "SOFUser.h"
+#import "NSNumberFormatter+SOFNumberFormatter.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <UIActivityIndicator-for-SDWebImage/UIImageView+UIActivityIndicatorForSDWebImage.h>
 
 @interface SOFViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;    
 
 //
 @property (strong, nonatomic) NSArray *users;
 
+//
+@property (nonatomic, strong) NSNumberFormatter *numberFormatter;
+    
 @end
 
 @implementation SOFViewController
@@ -27,6 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self initializeControllerProperties];
     [self fetchUsers];
 }
 
@@ -35,7 +40,10 @@
 }
 
 #pragma mark - Helpers
-
+- (void)initializeControllerProperties {
+    self.numberFormatter = [[NSNumberFormatter alloc] init];
+}
+    
 - (void)fetchUsers {
     self.tableView.hidden = YES;
     
@@ -72,9 +80,10 @@
     SOFUser *user = self.users[indexPath.row];
     [cell.profileImageView setImageWithURL:user.profileImageURL usingActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     cell.userNameLabel.text = user.name;
-    cell.goldBadgeLabel.text = [NSString stringWithFormat:@"Gold: %d", user.goldCount];
-    cell.silverBadgeLabel.text = [NSString stringWithFormat:@"Silver: %d", user.silverCount];
-    cell.bronzeBadgeLabel.text = [NSString stringWithFormat:@"Bronze: %d", user.bronzeCount];
+    cell.userReputationLabel.text = [self.numberFormatter decimalFormatedStringFromNumber:@(user.reputation)];
+    cell.goldBadgeLabel.text = [NSString stringWithFormat:@"%ld", (long)user.goldCount];
+    cell.silverBadgeLabel.text = [NSString stringWithFormat:@"%ld", (long)user.silverCount];
+    cell.bronzeBadgeLabel.text = [NSString stringWithFormat:@"%ld", (long)user.bronzeCount];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

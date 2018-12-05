@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB4951C721B749A10048B919 /* NSNumberFormatter+SOFNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4951C621B749A10048B919 /* NSNumberFormatter+SOFNumberFormatter.m */; };
 		BB7247C420817D5300A93024 /* SOFUserFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7247C320817D5300A93024 /* SOFUserFetcher.m */; };
 		BB7247C820817DB300A93024 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7247C720817DB300A93024 /* Constants.m */; };
 		BB7247CC20817FCE00A93024 /* SOFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7247CB20817FCE00A93024 /* SOFUser.m */; };
@@ -39,6 +40,8 @@
 		6723703B8E407CD55F061297 /* Pods-StackOverflowFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-StackOverflowFeed/Pods-StackOverflowFeed.release.xcconfig"; sourceTree = "<group>"; };
 		747E941FA318A6EA673360E4 /* libPods-StackOverflowFeed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StackOverflowFeed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FF97A11B3FDD6AE0FCEB3C /* Pods-StackOverflowFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StackOverflowFeed/Pods-StackOverflowFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		BB4951C521B749A10048B919 /* NSNumberFormatter+SOFNumberFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumberFormatter+SOFNumberFormatter.h"; sourceTree = "<group>"; };
+		BB4951C621B749A10048B919 /* NSNumberFormatter+SOFNumberFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumberFormatter+SOFNumberFormatter.m"; sourceTree = "<group>"; };
 		BB7247C220817D5300A93024 /* SOFUserFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOFUserFetcher.h; sourceTree = "<group>"; };
 		BB7247C320817D5300A93024 /* SOFUserFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOFUserFetcher.m; sourceTree = "<group>"; };
 		BB7247C620817DB300A93024 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 			children = (
 				BB7247C620817DB300A93024 /* Constants.h */,
 				BB7247C720817DB300A93024 /* Constants.m */,
+				BB4951C521B749A10048B919 /* NSNumberFormatter+SOFNumberFormatter.h */,
+				BB4951C621B749A10048B919 /* NSNumberFormatter+SOFNumberFormatter.m */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				BB7247C420817D5300A93024 /* SOFUserFetcher.m in Sources */,
 				BBD6785220817B7100FB8052 /* SOFViewController.m in Sources */,
 				BB7247CC20817FCE00A93024 /* SOFUser.m in Sources */,
+				BB4951C721B749A10048B919 /* NSNumberFormatter+SOFNumberFormatter.m in Sources */,
 				BBD67842208177B700FB8052 /* main.m in Sources */,
 				BB7247D92081933400A93024 /* SOFUserTableViewCell.m in Sources */,
 				BBD67834208177B700FB8052 /* AppDelegate.m in Sources */,

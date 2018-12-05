@@ -12,9 +12,10 @@
 
 @property (nonatomic, strong, readonly) NSString *name;
 @property (nonatomic, strong, readonly) NSURL *profileImageURL;
-@property (nonatomic, assign, readonly) int goldCount;
-@property (nonatomic, assign, readonly) int silverCount;
-@property (nonatomic, assign, readonly) int bronzeCount;
+@property (nonatomic, assign, readonly) NSInteger reputation;
+@property (nonatomic, assign, readonly) NSInteger goldCount;
+@property (nonatomic, assign, readonly) NSInteger silverCount;
+@property (nonatomic, assign, readonly) NSInteger bronzeCount;
 
 - (instancetype)initWithJSON:(NSDictionary *)userJSON;
 
